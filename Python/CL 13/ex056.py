@@ -1,34 +1,65 @@
 # Develop a program that reads the name, age, and gender of 4 people.
 # At the end, display:
-#T1 - The average age of the group.
-#T2 - The name of the oldest man.
-#T3 - The number of women under 20 years old.
+# - The average age of the group.
+# - The name of the oldest man.
+# - The number of women under 20 years old.
 
-from math import trunc
+n1 = str(input('Type your name: '))
+n1a = int(input('Type your age: '))
+n1g = int(input('If female type (1), if male type (2) Other (3)'))
 
-ageavg = 0
-oldname = 0
-nameold = ''
-wunder20 = 0
+n2 = str(input('Type your name: '))
+n2a = int(input('Type your age: '))
+n2g = int(input('If female type (1), if male type (2) Other (3)'))
 
-for p in range (1,5):
-    print('=-=-=-=-= {}ªPERSON =-=-=-=-='.format(p))
-    name = str(input('Type your name: '))
-    age = int(input('Type your age: '))
-    gender = int(input('Typer your gender: [1]Female, [2] Male and [3]Other: '))
+n3 = str(input('Type your name: '))
+n3a = int(input('Type your age: '))
+n3g = int(input('If female type (1), if male type (2) Other (3)'))
 
-# Age average 
-    ageavg = (ageavg + age)/4
+n4 = str(input('Type your name: '))
+n4a = int(input('Type your age: '))
+n4g = int(input('If female type (1), if male type (2) Other (3)'))
 
-# oldest name and name oldest
-    if gender == 2 and age > oldname:
-        oldname = age 
-        nameold = name
+# name = [n1, n2 , n3, n4]
+# a = [n1a, n2a, n3a, n4a]
+# g = [n1g, n2g, n3g, n4g]
 
-# woman under 20 
-    if gender == 1 and age < 20:
-        wunder20 = wunder20 + 1
+# # Age Average 
+# average = n1a + n2a + n3a + n4a /4
 
-print('The age average is: {}'.format(trunc(ageavg)))
-print('The name of the oldest man is: {} and he is {} years old'.format(nameold, oldname))
-print('The amount of women under 20 years old is: {}'.format(wunder20))
+# oldest = a[0]
+# ap = 0
+
+# for x in a:
+#     if x > oldest:
+#         oldest = x
+
+# for age, x in enumerate (a):
+#     if age == oldest:
+#         oldest = ap
+
+# # Name of the oldest
+# ap = name[ap]
+
+# n20 = 0 
+
+# # Number of woman under 20 
+# for c in range (0,5):
+#     if c[a] < 20 and c[g] == 1:
+#         n20 = n20 + 1
+
+# print (n20)
+
+p1 = [n1, n1a, n1g]
+p2 = [n2, n2a, n2g]
+p3 = [n3, n3a, n3g]
+p4 = [n4, n4a, n4g]
+
+age = p1[2] + p2[2] + p3[2] + p4[2]/4
+
+oldest = p1 [1]
+
+for o in p1[1], p2[1], p3[1] and p4[1]:
+    if o > oldest:
+        oldest = o
+

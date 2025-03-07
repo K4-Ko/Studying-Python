@@ -1,7 +1,4 @@
 # Create a program that reads an integer number and determines whether it is a prime number or not.
-
-import math
-
 n = int(input('Type a number: '))
 
 if n == 2:
