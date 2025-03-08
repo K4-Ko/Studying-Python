@@ -4,62 +4,39 @@
 # - The name of the oldest man.
 # - The number of women under 20 years old.
 
-n1 = str(input('Type your name: '))
-n1a = int(input('Type your age: '))
-n1g = int(input('If female type (1), if male type (2) Other (3)'))
+# t1 : Develop a program that reads the name, age, and gender of 4 people.
+# t5 : The number of women under 20 years old
 
-n2 = str(input('Type your name: '))
-n2a = int(input('Type your age: '))
-n2g = int(input('If female type (1), if male type (2) Other (3)'))
+from datetime import date
+from math import trunc
 
-n3 = str(input('Type your name: '))
-n3a = int(input('Type your age: '))
-n3g = int(input('If female type (1), if male type (2) Other (3)'))
+ageavg = 0
+oldestman = 0
+nameoldest = ''
+wunder20 = 0
 
-n4 = str(input('Type your name: '))
-n4a = int(input('Type your age: '))
-n4g = int(input('If female type (1), if male type (2) Other (3)'))
+# T1 : Develop a program that reads the name, age, and gender of 4 people. (OK!)
+for p in range (1, 5):
+    print('========== {} Person =========='.format(p))
+    name = str(input('What is your name: '))
+    age = date.today().year - (int(input ('What year were you born: ')))
+    gender = int(input('What is your gender: Type [1] for Female, Type [2] for Male, Type [3] for Other '))
 
-# name = [n1, n2 , n3, n4]
-# a = [n1a, n2a, n3a, n4a]
-# g = [n1g, n2g, n3g, n4g]
+# T2 : The average age of the group. (OK!)
+    ageavg = ageavg + age
 
-# # Age Average 
-# average = n1a + n2a + n3a + n4a /4
+# t3 : The age of the oldest man and the name of the oldest man (OK!)
+    if gender == 2:
+        if age > oldestman:
+            oldestman = age
+            nameoldest = name
 
-# oldest = a[0]
-# ap = 0
+# t5 : The number of women under 20 years old (OK !)
+    if gender == 1 and age < 20:
+        wunder20 += 1
 
-# for x in a:
-#     if x > oldest:
-#         oldest = x
+print('The group age average is: {}'.format(trunc(ageavg/4)))
+print('The Oldest mand is called {}  and his age is: {}'.format(nameoldest, oldestman))
+print('The amount of women under 20 years old is: {}'.format(wunder20))
 
-# for age, x in enumerate (a):
-#     if age == oldest:
-#         oldest = ap
-
-# # Name of the oldest
-# ap = name[ap]
-
-# n20 = 0 
-
-# # Number of woman under 20 
-# for c in range (0,5):
-#     if c[a] < 20 and c[g] == 1:
-#         n20 = n20 + 1
-
-# print (n20)
-
-p1 = [n1, n1a, n1g]
-p2 = [n2, n2a, n2g]
-p3 = [n3, n3a, n3g]
-p4 = [n4, n4a, n4g]
-
-age = p1[2] + p2[2] + p3[2] + p4[2]/4
-
-oldest = p1 [1]
-
-for o in p1[1], p2[1], p3[1] and p4[1]:
-    if o > oldest:
-        oldest = o
 
