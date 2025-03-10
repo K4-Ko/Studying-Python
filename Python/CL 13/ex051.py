@@ -6,5 +6,5 @@ r = int(input('Type the Progression: '))
 
 for c in range (n, n+10*r , r):
     print('{} ->'.format(c),end=(' '))
-print('ACABOU')
+print('END')
     
