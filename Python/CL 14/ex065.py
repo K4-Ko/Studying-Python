@@ -18,7 +18,7 @@ while c == 0:
     s = s + n
     
     # highest number and lowest number
-    if q ==1:
+    if q == 1:
         b = l = n
     else:
         if n > b:
