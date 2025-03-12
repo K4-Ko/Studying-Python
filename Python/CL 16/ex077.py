@@ -2,7 +2,8 @@
 # Then, for each word, display which vowels it contains.
 
 l = ('mouse', 'lamp', 'stone', 'chair', 'door',)
-print('\nThe following words has the following vowels: ')
+print('\nThe following words have the following vowels: ')
+
 for p in l:
     print(f'\n{p}: ', end=' ')
     for v in p:
