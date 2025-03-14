@@ -12,7 +12,3 @@ while True:
     else: 
         print('The number is invalid, try again !')
 print(f'The number you have typed is {t[n]}')
-    
-    
-    
-    
