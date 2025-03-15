@@ -12,12 +12,12 @@ for sim in n:
     elif sim == ')':
         if len(l) > 0:
             l.pop()
-    else:
-        l.append(')')
-        break
+        else:
+            l.append(')')
+            break
 
 if len(l) == 0:
     print('Your expression is valid !')
 else:
-    print('Your expression is not valid !')
+     print('Your expression is not valid !')
 
