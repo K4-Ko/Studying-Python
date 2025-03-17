@@ -1,0 +1,46 @@
+Mini Games Collection
+
+This repository contains a collection of small games built using Python. These games serve as a fun way to practice programming concepts while creating interactive experiences.
+
+Games Included
+
+1. GuessBot (Two Versions)
+
+GuessBot: The computer selects a random number, and the user tries to guess it. It simply tells if the guess is correct and reveals the number.
+
+GuessBot V2 (Improved): The user has multiple attempts to guess the number. The game tracks consecutive correct guesses and interacts with the user based on their performance (e.g., rewarding quick guesses).
+
+2. OddOrEven Game
+
+A simple game where the user and the computer choose numbers, and the program determines whether the sum is odd or even.
+
+3. Rock, Scissor, Paper
+
+The classic game where the user plays against the computer by choosing Rock, Scissors, or Paper. The program determines the winner based on standard game rules.
+
+How to Play
+
+Clone the repository:
+
+git clone https://github.com/K4-Ko/mini-games.git
+
+Navigate to the game directory and run the Python scripts:
+
+python GuessBot.py
+python GuessBotV2.py
+python OddOrEven.py
+python RockScissorPaper.py
+
+Requirements
+
+Python 3.x
+
+No additional libraries are required; the games run using Python's built-in features.
+
+Purpose
+
+This project is designed for fun and learning. It helps practice Python fundamentals, logic building, and user interaction through simple games.
+
+Contributions
+
+Feel free to contribute by improving the games or adding new ones!

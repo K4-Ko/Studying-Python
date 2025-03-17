@@ -1,0 +1,46 @@
+BMI Calculator
+
+This repository contains a simple BMI (Body Mass Index) calculator built using Python. The program calculates BMI based on the user's weight and height and provides a classification based on standard BMI categories.
+
+How It Works
+
+The user inputs their weight (kg) and height (m).
+
+The program calculates the BMI using the formula:
+
+BMI = weight / (height * height)
+
+The program classifies the BMI result into categories:
+
+Underweight
+
+Normal weight
+
+Overweight
+
+Obese
+
+How to Run
+
+Clone the repository:
+
+git clone https://github.com/K4-Ko/bmi-calculator.git
+
+Navigate to the project directory and run the script:
+
+python BMI\ Calculator.py
+
+Requirements
+
+Python 3.x
+
+No additional libraries required (uses only built-in Python functions)
+
+Purpose
+
+This project is a simple tool to help users quickly determine their BMI category. It serves as a practical example of handling user input, performing calculations, and providing output based on conditions.
+
+Contributions
+
+Suggestions and improvements are welcome!
+
