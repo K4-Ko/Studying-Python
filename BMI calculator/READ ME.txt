@@ -24,10 +24,11 @@ How to Run
 
 Clone the repository:
 
-git clone https://github.com/K4-Ko/bmi-calculator.git
+git clone https://github.com/K4-Ko/Studying-Python.git
 
-Navigate to the project directory and run the script:
+Navigate to the BMI Calculator directory and run the script:
 
+cd Studying-Python/BMI\ calculator
 python BMI\ Calculator.py
 
 Requirements
@@ -44,3 +45,6 @@ Contributions
 
 Suggestions and improvements are welcome!
 
+Repository Link
+
+BMI Calculator Repository
