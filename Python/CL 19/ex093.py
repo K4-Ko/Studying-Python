@@ -28,5 +28,3 @@ print(f'The player: {player_list['name']} has played {player_list['matches']}: '
 for m, goals in enumerate(player_list['goals']):
     print(f'{' '*5} => In the macth {m} {player_list['name']} Scored : {goals} goals')
 print(f'The total amout of goals is: {player_list['total']}')
-    
-  
