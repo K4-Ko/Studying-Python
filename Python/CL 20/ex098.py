@@ -15,7 +15,7 @@ def a():
 
 
 def b():
-    for x in range (10, 0, -1): 
+    for x in range (10, -1, -2): 
         print(x, end=' ', flush=True)  
         sleep(0.5)
     print()
