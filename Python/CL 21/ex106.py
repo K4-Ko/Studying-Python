@@ -22,7 +22,7 @@ def execute ():
             help_text = pydoc.render_doc(n)
             print('\033[1;30;47m' + help_text + '\033[m')
         except:
-            print('\033[1;30;47mDocument not availble\033[m')
+            print('Document not availble')
 
 lines(f'{'-'*16}{'PyHelper'}{'-'*18}')
 

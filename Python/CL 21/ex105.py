@@ -2,6 +2,15 @@
 # and return a dictionary containing the following information:
 
 def grade(*num,**kwargs):
+    """
+    
+    dc['Highest grade'] = high = max(l) : Shows the Highest grade
+    dc['Lowest grade'] = low = min(l): Shows the Lowest grade
+    dc['Number of grades'] = Shows the amout of grades
+    dc['Class average'] = Shows the average
+
+
+    """
     l = list(num)
     dc = {}
     print(l)
