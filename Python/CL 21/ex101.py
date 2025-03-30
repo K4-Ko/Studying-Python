@@ -20,6 +20,6 @@ while True:
         break
     
     a = date.today().year - b
-    print(f'Your vote is: {vote(a)}')
+    print(f'Your age is {a}, Your vote is: {vote(a)}')
  
     
