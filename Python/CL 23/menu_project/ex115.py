@@ -19,6 +19,7 @@ def main():
             if p == 1:
                 print(visual.print_option1())
                 try:
+                    # with open abre e fecha o arquivo de forma segura 
                     with open('Python\CL 23\menu_project\ register.txt', 'r') as file:
                         for line in file:
                             print(line.strip())
@@ -29,11 +30,27 @@ def main():
                 
                 print(visual.print_option2())
                 while True:
-                    n = input('Enter the name: ')
-                    a = input('Enter the age: ')
+                    
+                    while True:
+                        name_person = str(input('Enter the name: '))
+                        
+                        if name_person.replace(' ','').isalpha():
+                            break
+                        else:
+                            print(visual.print_error_temp())
+
+                    while True:    
+                        age_person = input('Enter the age: ')
+                        
+                        try:
+                            age_person = int(age_person)
+                            break
+                            
+                        except ValueError:
+                            print(visual.print_error_temp())
 
                     with open('Python\\CL 23\\menu_project\\ register.txt', 'a') as file:
-                        file.write(f'{n:<20}{"Age:":<5}{a:>3}\n')
+                        file.write(f'{name_person:<20}{"Age:":<5}{age_person:>3}\n')
                     
                     question = input('Do you want to register another user? (Y/N): ').upper()
                     
@@ -49,11 +66,10 @@ def main():
 
                 os.system('cls' if os.name == 'nt' else 'clear')
                 print(visual.menu_principal_visual())
-            
+        
             elif p == 3:
                 print('\033[1;34mExiting...\033[0m')
                 sleep(1)
                 break
-            
 if __name__ == "__main__":
     main()

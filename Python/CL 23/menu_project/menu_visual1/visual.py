@@ -22,7 +22,7 @@ def print_error_temp():
 
     """
     print('\033[1;31mThis option is not valid !\033[0m')
-    time.sleep(1)
+    time.sleep(1.2)
     print('\033[1A\033[K')
     return ''
 
